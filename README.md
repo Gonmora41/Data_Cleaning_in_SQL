@@ -120,6 +120,7 @@ set
 	HalfBath = nullif(@col19, '')
 ;*/
 ```
+I also attached the python code I also created in order to avoid to manually write the columns there. 
 
 It is only at this point that I could start cleaning the data with SQL. Here is the SQL code and the transformations I performed:
 ```SQL
