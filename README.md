@@ -37,7 +37,7 @@ df = pd.read_excel(r'Path')
 df.to_csv(r'Path',index = False)
 
 ```
-Turned out that I was missing writing the full path with the file included at the end. Since I couldn't fix it at the time, I came up with a different code:
+Turned out that I was missing writing the full path (file included). Since I couldn't fix it at the time, I came up with a different code:
 
 ```Python
 import pandas as pd
@@ -68,7 +68,7 @@ PropertyAddress varchar(250),
 SaleDate datetime,
 SalePrice int,
 LegalReference varchar(250),
-SoldAsVacant varchar(250), -- me gustaría que fuese un bool
+SoldAsVacant varchar(250), 
 OwnerName varchar(250),
 OwnerAddress varchar(250),
 Acreage float,
@@ -82,7 +82,7 @@ FullBath int,
 HalfBath int
 );
 
--- Allow as to load external data into the table
+-- Allow us to load external data into the table
 show global variables like 'local_infile'; 
 set global local_infile = 1;
 
